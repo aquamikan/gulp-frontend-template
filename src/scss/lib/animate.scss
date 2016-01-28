@@ -1,0 +1,26 @@
+@keyframes horizontal {
+  0% { transform:translateX( -5px); }
+  100% { transform:translateX(  0px); }
+}
+@keyframes vertical {
+  0% { transform:translateY(-10px); }
+  100% { transform:translateY(  0px); }
+}
+
+.point-1-op, .point-3-op {
+ animation: horizontal 1s ease-in-out infinite alternate;
+ img{
+  animation: vertical 1s ease-in-out infinite alternate;
+}
+}
+
+.point-2-op {
+  animation: vertical 1s ease-in-out infinite alternate;
+  img{
+    animation: horizontal 1.4s ease-in-out infinite alternate;
+  }
+}
+
+.point-1-op { animation-duration: 1.1s }
+.point-2-op { animation-duration: 1.7s }
+.point-3-op { animation-duration: 1.3s }
